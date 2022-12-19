@@ -1,13 +1,12 @@
 import java.sql.*;
 import java.util.Scanner;
 
-
 public class AppMain {
     public static void main(String[] args) throws Exception {
         // 설문 분기 여부
         System.out.println("설문을 참여 하시겠습니까?");
 
-        Commens commens = new Commens();
+        Commons commens = new Commons();
         Statement statement = commens.getStatement();
 
         String flag = "T"; // Do WHILE은 좋지 않은 방법임

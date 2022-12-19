@@ -20,7 +20,7 @@ public class Surveys {
 
         // 유니크아이디는 그때그때 새로만들어내야한다.
         // 날짜별로 새롭게 만드는 유니크아이디
-        Commens commens = new Commens();
+        Commons commens = new Commons();
         String strDate = commens.getGenerateID();
 
         String query = " INSERT INTO users_list(USERS_UID,PHONE,NAME)" +
